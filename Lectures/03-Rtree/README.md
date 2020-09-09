@@ -1,1 +1,2 @@
-## Lectures 03-Rtree - No Description
+## RTrees - Resources for Rtrees
+#### Due: None

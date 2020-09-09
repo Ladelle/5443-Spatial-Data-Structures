@@ -1,3 +1,6 @@
+## Topics - Overview of Spatial Topics
+#### Due: None
+
 - Terms
   - points 
   - lines
