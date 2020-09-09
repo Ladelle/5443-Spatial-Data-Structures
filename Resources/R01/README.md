@@ -1,4 +1,4 @@
-## README - How You Should Format Them
+## README's - How You Should Format Them
 #### Due: None
 
 Every single folder on your repo should contain a `README.md`. This is because when I or someone else looks at your repo, and clicks on a folder, they will see not just a directory listing, but an explanation and description of what that folder contains. I'm not making you create README's to be an ass ... I promise. It simply adds credibility to your repo, and makes you look like you know what your doing (and care and visitors to your site). I understand that a lot (if not most) probably don't want anyone looking at your repo, but you should still put your best foot forward. When I browse repos on Github, I not only rely on the README files for information, but find myself judging the software or library based on how organized and descriptive the README's are. And after talking to other developers, I found that I'm not the only one.
@@ -17,13 +17,13 @@ We will use the README's that you will create in every assignment folder to do t
 - After table:
   - Instructions
     - Any and all information needed to run your code.
-    - These instructions will be used for others in the class to run your project on their machine. I PROMISE: you will learn very fast how not to assume things just work. Because they DON'T. When your code doesn't run on anyone elses system and you get a zero, I bet you start to let "assumptions" go out the window.
+    - These instructions will be used for others in the class to run your project on their machine. I PROMISE: you will learn very fast how not to assume things just work. Because they DON'T. When your code doesn't run on anyone else's system and you get a zero, I bet you start to let "assumptions" go out the window.
 
 ### Common Errors
 
 - Common Errors / Reasons for projects not to run (we can grow a similar list as the class goes on to help everyone get past common pitfalls):
   - Local libraries that you installed and not everyone else did the same.
-  - Accessing files or fonts using local paths that will not be the same on someone elses machine (this one is annoying).
+  - Accessing files or fonts using local paths that will not be the same on someone else's machine (this one is annoying).
     - Example:
       - Your path: `C:\my_documents\pythonProjects\PyCharm\P01\Helvetica.ttf`
       - My Path: `/User/griffin/Projects/P01/Helvetica.ttf`
