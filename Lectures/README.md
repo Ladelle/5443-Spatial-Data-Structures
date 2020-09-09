@@ -4,6 +4,7 @@
  | [01-Topics](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/01-Topics) | [ Topics ](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/01-Topics) | [ Overview of Spatial Topics](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/01-Topics) | [N/A](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/01-Topics) |
  | [02-Btree](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/02-Btree) | [ BTrees ](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/02-Btree) | [ Introduction](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/02-Btree) | [N/A](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/02-Btree) |
  | [03-Rtree](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/03-Rtree) | [ RTrees ](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/03-Rtree) | [ Resources for RTrees](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/03-Rtree) | [N/A](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/03-Rtree) |
+ | [04-QuadTree](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/04-QuadTree) | [ Quadtrees ](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/04-QuadTree) | [ Papers and Lecture](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/04-QuadTree) | [04-QuadTree](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/04-QuadTree) | [|      | Name                                     | Description              |](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/04-QuadTree) | [N/A](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Lectures/04-QuadTree) |
  
     
 ## File Legend
@@ -16,4 +17,4 @@
 |xx-**T**xx | This is a ***Test***. Usually when on github, it will start out as a study guide, then get accompanied with a solution after the exam. |
 
     
-<sup>Last Updated: 2020-09-08 (Tue @ 23:43)</sup>
+<sup>Last Updated: 2020-09-09 (Wed @ 00:30)</sup>
