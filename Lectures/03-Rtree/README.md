@@ -1,2 +1,2 @@
-## RTrees - Resources for Rtrees
+## RTrees - Resources for RTrees
 #### Due: None

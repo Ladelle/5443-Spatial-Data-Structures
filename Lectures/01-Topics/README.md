@@ -29,15 +29,15 @@
 - [Binary_space_partitioning](https://en.wikipedia.org/wiki/Binary_space_partitioning)
   
 - Spatial Trees
-  - [Octree](https://en.wikipedia.org/wiki/Octree)
-  - [Quadtree](https://en.wikipedia.org/wiki/Quadtree)
+  - [OctTree](https://en.wikipedia.org/wiki/Octree)
+  - [QuadTree](https://en.wikipedia.org/wiki/Quadtree)
   - [K-d Tree](https://en.wikipedia.org/wiki/K-d_tree)
   - [R-Tree](https://en.wikipedia.org/wiki/R-tree)
     - R+ Tree
     - R* Tree
 
 - Spatial Interpolation
-  - [peucker](https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm)
+  - [Peucker](https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm)
 
 - Clustering
   1. Partition clustering
@@ -50,9 +50,9 @@
 - https://towardsdatascience.com/geospatial-clustering-kinds-and-uses-9aef7601f386
 - https://blog.mapbox.com/a-dive-into-spatial-search-algorithms-ebd0c5e39d2a
 
-- mapbox
-- googlemaps
-- open street maps
+- MapBox
+- GoogleMaps
+- Open Street Maps
 
 - https://gisgeography.com/python-libraries-gis-mapping/
 - https://automating-gis-processes.github.io/CSC18/
