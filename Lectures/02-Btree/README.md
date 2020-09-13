@@ -1,2 +1,0 @@
-## BTrees - Introduction
-#### Due: None
