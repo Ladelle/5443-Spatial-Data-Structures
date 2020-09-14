@@ -53,6 +53,8 @@ biltong filet mignon. Shoulder chislic ground round pork burgdoggen hamburger.
 |   1   | Main.py         | Main driver of my project that launches game.      |
 |   2   | HelperClass.py  | Helper class that holds movement functions         |
 |   3   | TextureClass.py | Helper class that assists with textures and images |
+|   4   | input.csv       | input file for data points                         |
+|   5   | output.csv      | output file for aggregate data                     |
 
 ### Instructions
 
