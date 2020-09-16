@@ -1,13 +1,15 @@
 from flask import Flask
 from flask import request
 from flask import jsonify
+from flask_cors import CORS
+
 import pymongo  # package for working with MongoDB
 
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 db = client["armageddon"]
 
-
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def index():
