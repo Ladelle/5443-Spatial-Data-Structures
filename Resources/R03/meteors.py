@@ -17,6 +17,8 @@ if __name__ == '__main__':
 
     lats,lons = get_meteorites()
 
+    print(lats)
+
     fig = go.Figure(go.Scattermapbox(
             lat=lats,
             lon=lons,
@@ -26,6 +28,10 @@ if __name__ == '__main__':
             ),
             #text=['Montreal'],
         ))
+
+    #{'lon': -51.447769636499956, 'lat': -14.237527770999932, 'min_lat': -33.74228037499995, 'max_lat': 5.267224833000086, 'min_lon': -74.01847469099997, 'max_lon': -28.877064581999946}
+
+
 
     # fig = go.Figure(go.Scattermapbox(
     #         lon = [bbox['max_lon'],bbox['min_lon'],bbox['max_lon'],bbox['min_lon']],
@@ -46,6 +52,17 @@ if __name__ == '__main__':
     #     )
     # )
 
+    fig.add_trace(
+        go.Scattergeo(
+            # locationmode = 'USA-states',
+            lon = [bbox['min_lon'], bbox['max_lon']],
+            lat = [bbox['min_lat'], bbox['max_lat']],
+            mode = 'lines',
+            line = dict(width = 4,color = 'red'),
+            # opacity = float(80) / float(100),
+        )
+    )
+
     fig.update_layout(
         hovermode='closest',
         template="plotly_dark",
@@ -61,6 +78,8 @@ if __name__ == '__main__':
             
         )
     )
+
+
 
     fig.show()
     plotly.offline.plot(fig, filename='meteors.html')
