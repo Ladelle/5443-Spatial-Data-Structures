@@ -2,6 +2,8 @@ from flask import Flask
 from flask import request
 from flask import jsonify
 import pymongo  # package for working with MongoDB
+import os,sys
+import json
 
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 db = client["armageddon"]
@@ -49,6 +51,29 @@ def country(name):
 
     return jsonify(lines)
 
+@app.route('/country/<string:name>')
+def country(name):
+
+
+    return jsonify(lines)
+
+@app.route('/country/)
+def get_country():
+    data_file = 'countries.geo.json'
+    if os.path.isfile(data_file):
+        with open(,'r') as f:
+            data = f.read()
+    else:
+        return jsonify({"Error":"countries.geo.json not there!!"})
+
+    countries = json.loads(data)
+
+    country_names = []
+
+    for country in countries:
+        country_names.append(country['properties']['name'])
+        
+    return jsonify(country_names)
 
 
 if __name__ == '__main__':

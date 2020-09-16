@@ -8,8 +8,6 @@
         import requests
         import json
 
-
-
     Usage:
 
     Start the flask server by running:
@@ -85,4 +83,4 @@ def post_click():
   print(lat,lon)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,port=5556)
