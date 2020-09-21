@@ -1,5 +1,7 @@
-## Assignment 3 - Flask API
+## Assignment 3 - Flask Spatial API
 #### Due: 09-28-2020 (Monday @ 4:30 p.m.)
+
+# NOT DONE
 
 For this assignment, you will use flask to query a spatial data structure for N points closest to a mouse click, and display those points on a map. This is just to get you started for our bigger project. You can use an R-Tree or a KD-Tree it doesn't matter. I have a few links below of where you can find the resources to implement your spatial data structure. It doesn't matter which one you pick to start, because you will eventually will implement them both and will run comparisons on differing queries between the those structures and more. 
 
@@ -27,3 +29,4 @@ And here are a couple of implementations for both types of trees. Please post ot
     - https://geoffboeing.com/2016/10/r-tree-spatial-index-python/
 
 
+### Deliverables
