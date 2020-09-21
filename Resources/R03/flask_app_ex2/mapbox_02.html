@@ -32,11 +32,11 @@
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v11',
             center: [2.399601171634771,47.437756233044865],
-            zoom: 2
+            zoom: 3
         });
 
         map.on('load', function () {
-            $.getJSON("http://localhost:8888/country/Greece", {})
+            $.getJSON("http://localhost:8888/country/Egypt?key=value{})
                 .done(function (json) {
                     console.log(json);
                     map.addSource('country', {
@@ -52,7 +52,7 @@
                             'line-cap': 'round'
                         },
                         'paint': {
-                            'line-color': '#888',
+                            'line-color': '#FF0000',
                             'line-width': 4
                         }
                     });

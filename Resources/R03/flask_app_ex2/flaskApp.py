@@ -14,7 +14,7 @@ CORS(app)
 
 
 def get_countries():
-    data_file = 'countries.geo.json'
+    data_file = '../data/countries.geo.json'
     if os.path.isfile(data_file):
         with open(data_file,'r') as f:
             data = f.read()
@@ -128,7 +128,7 @@ def test():
 
 @app.route('/country/<string:name>')
 def country(name):
-    data_file = 'countries.geo.json'
+    data_file = '../data/countries.geo.json'
     if os.path.isfile(data_file):
         with open(data_file,'r') as f:
             data = f.read()

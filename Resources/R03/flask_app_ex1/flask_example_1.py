@@ -38,7 +38,7 @@ def get_country_border(name):
                 points['lon'].append(point[0])
                 points['latlon'].append(point)
 
-    return jsonify(points)
+    return jsonify({"points":points,"name":name})
 
 @app.route('/earthquake/<int:id>')
 def earthquake(id):
