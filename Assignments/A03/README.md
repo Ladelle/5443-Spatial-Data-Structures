@@ -25,3 +25,5 @@ And here are a couple of implementations for both types of trees. Please post ot
     - https://toblerity.org/rtree/index.html#home
   - With geopandas:
     - https://geoffboeing.com/2016/10/r-tree-spatial-index-python/
+
+
