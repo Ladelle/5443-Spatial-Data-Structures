@@ -9,6 +9,13 @@ app = Flask(__name__)
 CORS(app)
 
 
+"""
+   ____        _        
+  |  _ \  __ _| |_ __ _ 
+  | | | |/ _` | __/ _` |
+  | |_| | (_| | || (_| |
+  |____/ \__,_|\__\__,_|
+""" 
 
 class BooksData():
     """ BooksData: An example class that provides an interface to a json library of books.
@@ -57,6 +64,13 @@ class BooksData():
 
 books = BooksData()
 
+"""
+   ____             _            
+  |  _ \ ___  _   _| |_ ___  ___ 
+  | |_) / _ \| | | | __/ _ \/ __|
+  |  _ < (_) | |_| | ||  __/\__ \
+  |_| \_\___/ \__,_|\__\___||___/
+"""
 
 @app.route("/", methods=["GET"])
 def getRoutes():
@@ -66,12 +80,14 @@ def getRoutes():
     for r in app.url_map._rules:
         routes[r.rule] = {}
         routes[r.rule]["functionName"] = r.endpoint
-        routes[r.rule]["help"] = globals().get(str(r.endpoint)).__doc__
+        routes[r.rule]["help"] = formatHelp(r.endpoint)
         routes[r.rule]["methods"] = list(r.methods)
 
     routes.pop("/static/<path:filename>")
 
-    return jsonify(routes)
+    response = json.dumps(routes,indent=4)
+    response = response.replace("\n","<br>")
+    return "<pre>"+response+"</pre>"
 
 
 @app.route('/book/<string:isbn>', methods=["GET"])
@@ -143,6 +159,19 @@ def handle_response(data,error=None):
     
     
     return jsonify(result)
+
+def formatHelp(route):
+    help = globals().get(str(route)).__doc__
+    if help != None:
+        help = help.split("\n")
+        clean_help = []
+        for i in range(len(help)):
+            help[i] = help[i].rstrip()
+            if len(help[i]) > 0:
+                clean_help.append(help[i])
+    else:
+        clean_help = "No Help Provided."
+    return clean_help
 
 
 if __name__ == '__main__':
