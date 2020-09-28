@@ -1,3 +1,5 @@
+#!/Users/griffin/.pyenv/shims/python
+
 from flask import Flask,  url_for
 from flask import request
 from flask import jsonify
@@ -5,6 +7,8 @@ from flask_cors import CORS
 
 import json
 from datetime import datetime
+
+from misc_functions import haversine
 
 
 app = Flask(__name__)
@@ -58,6 +62,32 @@ class UfoData():
             if not ufo['shape'] in results:
                 results.append(ufo['shape'])
         return results
+
+    def getUfoNeighbors(self,lng,lat,dist):
+        results = []
+        
+        point1 = (float(lng),float(lat))
+
+        mind = 9999999
+        mini = 0
+
+        i = 1
+        for ufo in self.ufos:
+            if not isFloat(ufo['longitude']) or not isFloat(ufo['latitude']):
+                continue
+            #print(f"{i} : {ufo['longitude']},{ufo['latitude']}")
+            point2 = (float(ufo['longitude']),float(ufo['latitude']))
+            hdist = haversine(point1,point2)
+            if hdist < mind:
+                mini = point2
+                mind = hdist
+            #print(f"{i} : {hdist} {mini}")
+            if hdist <= float(dist):
+                results.append(ufo)
+            i += 1
+        print(f"{mind} {mini}")
+        return results
+        
 
     def getUfosByDate(self,start,end):
         i = 0
@@ -182,6 +212,29 @@ def ufo(start,end):
 
     return handle_response(data,{'start':start,'end':end})
 
+@app.route('/ufo/nearest/', methods=["GET"])
+def ufoNearest():
+    """ Description: Get all the ufos within some distance
+        Params: 
+            lng (float)   : longitude
+            lat (float)   : latitude
+            dist (float)  : distance in miles
+        Example: http://localhost/ufo/nearest?lng=34.12345&lat=-124.98787&dist=100
+    """
+    global ufos
+
+    lng = request.args.get('lng',None)
+    lat  = request.args.get('lat',None)
+    dist = request.args.get('dist',None)
+
+    if not lng or not lat or not dist:
+        return handle_response([],{'lng':lng,'lat':lat,'dist':dist},"Error, you need all the params.")
+
+    data = ufos.getUfoNeighbors(lng,lat,dist)
+
+    return handle_response(data,{'lng':lng,'lat':lat,'dist':dist})
+
+
 @app.route('/ufo/count/', methods=["GET"])
 def ufoCount():
     """ Description: Get count of ufos
@@ -199,9 +252,9 @@ def ufoCount():
 def ufoByDate(start,end):
     """ Description: Get all the ufos with pagination
         Params: 
-            start (int) : start page count
-            end (int)   : end page count
-        Example: http://localhost/ufo/100/300/
+            start (int) : start year
+            end (int)   : end year
+        Example: http://localhost/ufo/2007/2008/
     """
     global ufos
 
@@ -308,6 +361,12 @@ def formatHelp(route):
         clean_help = "No Help Provided."
     return clean_help
 
+def isFloat(string):
+    try:
+        float(string)
+        return True
+    except ValueError:
+        return False
 
 if __name__ == '__main__':
       app.run(host='0.0.0.0', port=8080,debug=True)
