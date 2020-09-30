@@ -56,10 +56,10 @@ def bearing(pointA, pointB):
     if (type(pointA) != tuple) or (type(pointB) != tuple):
         raise TypeError("Only tuples are supported as arguments")
 
-    lat1 = math.radians(pointA[0])
-    lat2 = math.radians(pointB[0])
+    lat1 = math.radians(pointA[1])
+    lat2 = math.radians(pointB[1])
 
-    diffLong = math.radians(pointB[1] - pointA[1])
+    diffLong = math.radians(pointB[0] - pointA[0])
 
     x = math.sin(diffLong) * math.cos(lat2)
     y = math.cos(lat1) * math.sin(lat2) - (math.sin(lat1)
@@ -247,4 +247,4 @@ def point_in_poly(self,x,y,poly):
     return inside
 
 if __name__=='__main__':
-    pass
+    print(5180 * haversine((-124.000,34.000), (-124.0020,34.0020)))

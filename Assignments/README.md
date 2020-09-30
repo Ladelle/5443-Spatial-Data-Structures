@@ -3,7 +3,7 @@
  | ------------|------------|------------|------------|
  | [A01](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A01) | [ Assignment 1 ](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A01) | [ Establishing 2 Way Communication](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A01) | [08-26-2020 (Wednesday @ 4:30 p.m.)](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A01) |
  | [A02](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A02) | [ Assignment 2 ](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A02) | [ 1 Way Communication (you to me)](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A02) | [08-26-2020 (Wednesday @ 4:30 p.m.)](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A02) |
- | [A03](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A03) | [ Assignment 3 ](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A03) | [ Flask Spatial API](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A03) | [09-28-2020 (Monday @ 4:30 p.m.)](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A03) |
+ | [A03](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A03) | [ Assignment 3 ](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A03) | [ Flask Spatial API](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A03) | [10-02-2020 (Friday @ 5:30 p.m.)](https://github.com/rugbyprof/5443-Spatial-Data-Structures/tree/master/Assignments/A03) |
  
     
 ## File Legend
@@ -16,4 +16,4 @@
 |xx-**T**xx | This is a ***Test***. Usually when on github, it will start out as a study guide, then get accompanied with a solution after the exam. |
 
     
-<sup>Last Updated: 2020-09-22 (Tue @ 09:02)</sup>
+<sup>Last Updated: 2020-09-30 (Wed @ 12:29)</sup>
